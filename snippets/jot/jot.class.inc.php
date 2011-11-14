@@ -676,7 +676,7 @@ class CJot {
 
 							$mail = new MODxMailer();
 							$mail->IsHTML(false);
-							$mail->From		= $modx->config['emailsender'].
+							$mail->From		= $modx->config['emailsender'];
 							$mail->FromName	= $modx->config['site_name'];
 							$mail->Subject	= $this->config["subject"]["subscribe"];
 							$mail->Body		= $message;
@@ -711,7 +711,7 @@ class CJot {
 				//mail($user["email"], $this->config["subject"]["moderate"], $message, "From: ".$modx->config['emailsender']."\r\n"."X-Mailer: Content Manager - PHP/".phpversion());
 				$mail = new MODxMailer();
 				$mail->IsHTML(false);
-				$mail->From		= $modx->config['emailsender'].
+				$mail->From		= $modx->config['emailsender'];
 				$mail->FromName	= $modx->config['site_name'];
 				$mail->Subject	= $this->config["subject"]["moderate"];
 				$mail->Body		= $message;
@@ -752,7 +752,7 @@ class CJot {
 			//mail($user["email"], $this->config["subject"]["author"], $message, "From: ".$modx->config['emailsender']."\r\n"."X-Mailer: Content Manager - PHP/".phpversion());
 			$mail = new MODxMailer();
 			$mail->IsHTML(false);
-			$mail->From		= $modx->config['emailsender'].
+			$mail->From		= $modx->config['emailsender'];
 			$mail->FromName	= $modx->config['site_name'];
 			$mail->Subject	= $this->config["subject"]["author"];
 			$mail->Body		= $message;
