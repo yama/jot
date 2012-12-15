@@ -2,7 +2,7 @@
 /*####
 #
 #	Name: Jot
-#	Version: 1.1.5
+#	Version: 1.1.6
 #	Author: Armand "bS" Pondman (apondman@zerobarrier.nl)
 #	Date: Aug 04, 2008
 #
@@ -80,7 +80,7 @@ class CJot {
 		if (!class_exists('CChunkie'))
 			include_once($path . '/includes/chunkie.class.inc.php');
 		$this->name = $this->config["snippet"]["name"] = "Jot";
-		$this->version = $this->config["snippet"]["version"] = "1.1.5"; //
+		$this->version = $this->config["snippet"]["version"] = "1.1.6"; //
 		$this->config["snippet"]["versioncheck"] = "Unknown";
 		$this->_ctime = time();
 		$this->_check = 0;
